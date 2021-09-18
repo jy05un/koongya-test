@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+    <title>쿵야 테스트</title>
+
+    <link rel="stylesheet" href="koongya.css">
+
+</head>
+
+<body class="color-type">
+    <div class="stepBox-wrap">
+        <div class="q-wrap">
+            <!-- 질문 1 -->
+            <div class="stepBox" style="display:block;">
+                <p class="title"><span>Question</span><strong> &lt;01&gt;</strong></p>
+                <p class="question">여행 어땠냐고<br>질문한 친구에게<br>당신의 답변은?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q7-1" name="q7" onclick="javascript:check('TF','T');">
+                        <label for="q7-1">
+                            <strong>'재미있었다'</strong><br>며 여행내용 한줄 요약!
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q7-2" name="q7" onclick="javascript:check('TF','F');">
+                        <label for="q7-2">
+                            사진을 왕창 보내며<br><strong>'여기 너무 예쁘지 않니?'</strong>TMI 폭격!
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:10%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 1 -->
+
+            <!-- 질문 2 -->
+            <div class="stepBox">
+                <p class="title"><span>Question</span><strong> &lt;02&gt;</strong></p>
+                <p class="question">여유로운 주말에<br>당신은 어떻게 보낼 예정인가요?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q8-1" name="q8" onclick="javascript:check('','');">
+                        <label for="q8-1">
+                            집에서 <strong>넷플릭스 보면서</strong>
+                            <br>시간을 보내다!
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q8-2" name="q8" onclick="javascript:check('','');">
+                        <label for="q8-2">
+                            친구들을 불러서<br>
+                            <strong>파티를 즐긴다!</strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:20%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 2 -->
+
+            <!-- 질문 3 -->
+            <div class="stepBox">
+                <p class="title"><span>Question</span><strong> &lt;03&gt;</strong></p>
+                <p class="question">반려견과 함께<br>산책 중일 때 당신은</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q9-1" name="q9" onclick="javascript:check('','');">
+                        <label for="q9-1">
+                            반려견의 상태를<br>
+                            체크하며 <strong>전방 주시!</strong>
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q9-2" name="q9" onclick="javascript:check('','');">
+                        <label for="q9-2">
+                            주변 구경을 하면서<br>
+                            반려견과 <strong>셀카도 찰칵!</strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:30%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 3 -->
+
+            <!-- 질문 4 -->
+            <div class="stepBox">
+                <p class="title"><span>Question</span><strong> &lt;04&gt;</strong></p>
+                <p class="question">애인과 여행을<br>간다면 당신은?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q10-1" name="q10" onclick="javascript:check('JP','J');">
+                        <label for="q10-1">
+                            여행 계획을<br>
+                            <strong>미리 다 짜놓고 </strong>간다!
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q10-2" name="q10" onclick="javascript:check('JP','P');">
+                        <label for="q10-2">
+                            애인과 함께<br>
+                            <strong>'즉흥 여행'</strong>을 즐긴다!
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:40%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 4 -->
+
+            <!-- 질문 5 -->
+            <div class="stepBox">
+                <p class="title"><span>Question</span><strong> &lt;05&gt;</strong></p>
+                <p class="question">가려고 했던 맛집이<br>문을 닫았다면 당신은?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q2-1" name="q2" onclick="javascript:check('JP','J');">
+                        <label for="q2-1">
+                            곧바로 다른 맛집을<br>
+                            <strong>검색해본다.</strong>
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q2-2" name="q2" onclick="javascript:check('JP','P');">
+                        <label for="q2-2">
+                            <strong>주변에 보이는 식당</strong> 중<br>
+                            하나 골라서 들어간다!
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:50%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 5 -->
+
+            <!-- 질문 6 -->
+            <div class="stepBox">
+                <p class="title"><span>Question</span><strong> &lt;06&gt;</strong></p>
+                <p class="question">운동을 막 끝낸 후<br>거울을 본 당신은?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q3-1" name="q3" onclick="javascript:check('SN','S');">
+                        <label for="q3-1">
+                            <strong>'오늘 1시간이나 했네'</strong><br>
+                            생각하며 빨리 씻으러 간다!
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q3-2" name="q3" onclick="javascript:check('SN','N');">
+                        <label for="q3-2">
+                            <strong>내가 바로 '근수저'?</strong><br>
+                            벌써 복근 생긴 느낌적인 느낌!
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:60%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 6 -->
+
+            <!-- 질문 7 -->
+            <div class="stepBox">
+                <p class="title"><span>Question</span><strong> &lt;07&gt;</strong></p>
+                <p class="question">회사에서 사고 쳤다는<br>친구의 연락에 당신은?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q5-1" name="q5" onclick="javascript:check('TF','T');">
+                        <label for="q5-1">
+                            '왜? 왜?'라며<strong>무슨 일인지</strong><br>
+                            구체적으로 물어본다!
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q5-2" name="q5" onclick="javascript:check('TF','F');">
+                        <label for="q5-2">
+                            <strong>친구부터 위로</strong>하고<br>
+                            무슨 상황인지 물어본다!
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:70%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 7 -->
+
+            <!-- 질문 8 -->
+            <div class="stepBox">
+                <p class="title">
+                    <span>Question</span><strong> &lt;08&gt;</strong>
+                </p>
+                <p class="question">간만의 휴일에<br>친구 연락을 받은 당신은?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q1-1" name="q1" onclick="javascript:check('IE','I');">
+                        <label for="q1-1">
+                            '귀찮아, 그냥 집에서 쉴래'<br>
+                            <strong>친구의 연락을 거절한다!</strong>
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q1-2" name="q1" onclick="javascript:check('IE','E');">
+                        <label for="q1-2">
+                            빛의 속도으로 준비해서<br>
+                            <strong>집 밖으로 탈출!</strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:80%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 8 -->
+
+            <!-- 질문 9 -->
+            <div class="stepBox">
+                <p class="title"><span>Question</span><strong> &lt;09&gt;</strong></p>
+                <p class="question">오랜만에 쇼핑하러<br>간 당신은?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q4-1" name="q4" onclick="javascript:check('JP','J');">
+                        <label for="q4-1">
+                            쇼핑리스트만 오조오억개.<br>
+                            <strong>동선 최적화 코스</strong>로 움직인다.
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q4-2" name="q4" onclick="javascript:check('JP','P');">
+                        <label for="q4-2">
+                            <strong>신상부터 둘러보며</strong><br>
+                            카트에 가득 담는다.
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:90%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 9 -->
+
+            <!-- 질문 10 -->
+            <div class="stepBox">
+                <p class="title"><span>Question</span><strong> &lt;10&gt;</strong></p>
+                <p class="question">크리스마스가 되었습니다!<br>당신은 어떤 선물을 받고 싶어요?</p>
+                <div class="answer">
+                    <div class="formField">
+                        <input type="radio" id="q6-1" name="q6" onclick="javascript:check('TF','T');">
+                        <label for="q6-1">
+                            나에게 꼭 필요했던<br>
+                            <strong>실용적인 선물</strong>
+                        </label>
+                    </div>
+                    <div class="formField">
+                        <input type="radio" id="q6-2" name="q6" onclick="javascript:check('TF','F');">
+                        <label for="q6-2">
+                            진심을 가득 담은<br>
+                            <strong>로맨틱한 꽃과 편지</strong>
+                        </label>
+                    </div>
+                </div>
+                <div class="paging">
+                    <div class="progress-wrap">
+                        <span class="progress-bar" style="width:100%"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //질문 10 -->
+
+            <div class="stepBox loading-wrap">
+                <div class="loading">
+                    <svg class="circle_a">
+                        <ellipse id="circle_a" rx="152.5" ry="152" cx="152.5" cy="152">
+                        </ellipse>
+                    </svg>
+                    <svg class="circle_b">
+                        <ellipse id="circle_b" rx="139.5" ry="139" cx="139.5" cy="139">
+                        </ellipse>
+                    </svg>
+                    <img src="img/img_bar.png" alt="" class="img-bar">
+                    <img src="img/loading.png" alt="" class="img-gif">
+                </div>
+                <div class="img-txt">
+                    <span class="txt-loaging">분석 중...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 해당페이지 스크립트 -->
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="check.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).on('load resize', function () {
+                var wHeight = $(window).height();
+                $('.stepBox-wrap .q-wrap .stepBox').css('height', wHeight + 'px')
+            })
+            $('.formField > input').each(function () {
+                var $this = $(this);
+                $this.on('change', function () {
+                    setTimeout(function () {
+                        $this.parents('.stepBox').hide()
+                        $this.parents('.stepBox').next().show();
+                        pageResult();
+                    }, 100)
+                });
+            });
+        })
+
+        function pageResult() {
+            var loading = $('.q-wrap > div').last();
+
+            if (loading.css('display') == 'block') {
+                console.log('end');
+                localStorage.result = getResult();
+                var result = localStorage.result.toUpperCase();
+                setTimeout(function () {
+                    location.replace('result' + result + '.html')
+                }, 2000)
+            }
+        }
+    </script>
+    <!-- //해당페이지 스크립트 -->
+</body>
+
+</html>

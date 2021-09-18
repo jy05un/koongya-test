@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <title>나의 쿵야는…</title>
+
+    <link rel="stylesheet" href="koongya.css">
+</head>
+
+<body>
+    <div class="result-wrap">
+        <div class="header-wrap"></div>
+        <div class="center-wrap">
+            <div class="cont-wrap" id="infj">
+                <div class="txt-1">
+                    <span></span>
+                </div>
+                <div class="txt-2">
+                    <strong class="txt-color">INFJ</strong><strong> 반계</strong>
+                </div>
+                <div class="img-result"><img src="img/반계.gif" alt=""></div>
+                <div class="text-result">
+                    정직하고 성실하며 감수성이 풍부한 당신은 INFJ입니다! 주위 사람의 감정을 빠르고 정확하게 파악할 줄 알고 주변 사람에게 자신을 맞춥니다! 또한 정직하고 성실해 주위 사람들에게
+                    인정을 받는 스타일이지만 앞보단 뒤에서 묵묵히 능력을 발휘하는 것을 좋아하는 스타일인 당신은 마치 반계쿵야와 같네요!
+                </div>
+            </div>
+        </div>
+
+        <div class="share-wrap">
+            <p>결과 공유하기</p>
+            <a href="javascript:;" onclick="clip(); return false"><img src="img/btn_link.png" alt=""></a>
+        </div>
+
+        <div class="restartBox">
+            <a href="javascript:resetLink();" onclick="GA_Event('MBTI_result', 'restart', 'Click');">테스트 다시하기</a>
+        </div>
+
+        <div class="footer-wrap">ⓒ 2021 Copyright by Jyosun</div>
+    </div>
+
+    <!-- 해당페이지 스크립트 -->
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="check.js"></script>
+    <script src="slick.min.js"></script>
+    <script type="text/javascript">
+
+        $('.banner-wrap > ul').slick({
+            draggable: false,
+            dots: true,
+            arrows: false,
+            speed: 1000,
+            slidesToShow: 1,
+            autoplay: 3500,
+            infinite: true,
+        });
+
+        var articleId = "INFJ";
+
+        // URL 복사
+        function clip() {
+
+            var url = '';
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            url = window.document.location.href;
+            textarea.value = url;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("URL이 복사되었습니다.")
+        }
+
+        function resetLink() {
+            init();
+            location.replace('intro.html');
+        }
+
+    </script>
+    <!-- //해당페이지 스크립트 -->
+    <script type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+	<title>쿵야 테스트</title>
+
+	<link rel="stylesheet" href="koongya.css">
+	<script src="GoogleAnalyticsBuilder.js"></script>
+	<script type="text/javascript">
+
+		var filter = "win16|win32|win64|mac";
+		var dimemsion12 = '09';			// mobile web
+		if (navigator.platform && filter.indexOf(navigator.platform.toLowerCase()) >= 0) {
+			var dimemsion12 = '08';		// pc web
+		}
+
+		var init_Obj = new Object();
+		init_Obj[GACustomKey.Dimension12] = dimemsion12;
+
+		init_Obj[GAHitKey.Title] = 'MBTI_INDEX';
+
+		GA_Init(init_Obj);
+
+	</script>
+</head>
+
+<body>
+	<div class="intro-wrap">
+		<div class="header-wrap"></div>
+		<div class="center-wrap">
+			<div class="top-title"><img src="img/logo2.png" alt=""></div>
+			<div class="top-txt"><img src="img/logo.png" alt=""></div>
+			<div class="cont-wrap" id="intj">
+				<div class="img-result"><img src="img/intro.gif" alt=""></div>
+			</div>
+			<div class="btn-wrap"><a href="check.html" onclick="GA_Event('MBTI_intro', 'start', 'Click');">나는 무슨 쿵야일까?
+					-></a></div>
+		</div>
+		<div class="footer-wrap">ⓒ 2021 Copyright by Jyosun</div>
+	</div>
+	</div>
+
+	<!-- 해당페이지 스크립트 -->
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="slick.min.js"></script>
+	<script type="text/javascript">
+		$('.banner-wrap > ul').slick({
+			draggable: false,
+			dots: true,
+			arrows: false,
+			speed: 1000,
+			slidesToShow: 1,
+			autoplay: 3500,
+			infinite: true,
+		});
+	</script>
+	<!-- //해당페이지 스크립트 -->
+</body>
+
+</html>

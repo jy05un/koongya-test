@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <title>나의 쿵야는…</title>
+
+    <link rel="stylesheet" href="koongya.css">
+</head>
+
+<body>
+    <div class="result-wrap">
+        <div class="header-wrap"></div>
+        <div class="center-wrap">
+            <div class="cont-wrap" id="enfp">
+                <div class="txt-1">
+                    <span>쿵야계의 유재석</span>
+                </div>
+                <div class="txt-2">
+                    <strong class="txt-color">ENFP</strong><strong> 완두</strong>
+                </div>
+                <div class="img-result"><img src="img/완두.gif" alt=""></div>
+                <div class="text-result">
+                    “내가 이 구역의 분위기 메이커!” 상상력이 풍부하고 눈치가 빠른 당신은 ENFP입니다! 활발하고 창의적인 성격 덕분에 주위 사람들은 당신을 재치 있는 사람이라고 생각하며 친해지고
+                    싶어합니다! 또한 정이 많아 새로운 사람들과 만나는 걸 좋아하고 매사에 열정적이고 긍정적인 스타일이 마치 완두쿵야와 같아요!
+                </div>
+            </div>
+        </div>
+
+        <div class="share-wrap">
+            <p>결과 공유하기</p>
+            <a href="javascript:;" onclick="clip(); return false"><img src="img/btn_link.png" alt=""></a>
+        </div>
+
+        <div class="restartBox">
+            <a href="javascript:resetLink();" onclick="GA_Event('MBTI_result', 'restart', 'Click');">테스트 다시하기</a>
+        </div>
+
+        <div class="footer-wrap">ⓒ 2021 Copyright by Jyosun</div>
+    </div>
+
+    <!-- 해당페이지 스크립트 -->
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="check.js"></script>
+    <script src="slick.min.js"></script>
+    <script type="text/javascript">
+
+        $('.banner-wrap > ul').slick({
+            draggable: false,
+            dots: true,
+            arrows: false,
+            speed: 1000,
+            slidesToShow: 1,
+            autoplay: 3500,
+            infinite: true,
+        });
+
+        var articleId = "ENFP";
+
+        // URL 복사
+        function clip() {
+
+            var url = '';
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            url = window.document.location.href;
+            textarea.value = url;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("URL이 복사되었습니다.")
+        }
+
+        function resetLink() {
+            init();
+            location.replace('intro.html');
+        }
+
+    </script>
+    <!-- //해당페이지 스크립트 -->
+    <script type="text/javascript"></script>
+</body>
+
+</html>
