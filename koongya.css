@@ -85,7 +85,6 @@ h1 a img {
 
 /* footer */
 .footer-wrap {
-  margin-top: 100px;
   background: #333;
   text-align: center;
   color: #fff;
@@ -135,6 +134,7 @@ h1 a img {
 .center-wrap {
   padding: 0 25px;
   margin-top: 10%;
+  margin-bottom: 20%;
 }
 .banner-wrap {
   margin-top: 20px;
@@ -176,7 +176,7 @@ h1 a img {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 10%;
+  height: 4%;
   text-align: center;
   background-color: #244041;
 }
