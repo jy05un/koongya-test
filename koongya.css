@@ -134,7 +134,7 @@ h1 a img {
 .center-wrap {
   padding: 0 25px;
   margin-top: 10%;
-  margin-bottom: 35%;
+  margin-bottom: 20%;
 }
 .banner-wrap {
   margin-top: 20px;
@@ -291,7 +291,6 @@ h1 a img {
 }
 .share-wrap {
   text-align: center;
-  margin-top: 58px;
 }
 .share-wrap p {
   font-size: 20px;
@@ -317,7 +316,7 @@ h1 a img {
 }
 .restartBox {
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .restartBox a {
