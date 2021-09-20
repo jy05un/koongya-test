@@ -29,6 +29,15 @@ h2 {
   font-weight: 200;
 }
 
+h3 {
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -0.1px;
+  font-weight: 200;
+  background-color: #244041;
+}
+
 body {
   min-height: 100%;
   background: #fff;
@@ -184,6 +193,7 @@ h1 a img {
   text-align: center;
   background-color: #244041;
 }
+
 .intro-wrap .btn-wrap {
   text-align: center;
   margin-top: 20px;
