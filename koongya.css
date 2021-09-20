@@ -179,7 +179,7 @@ h1 a img {
 /* intro */
 .intro-wrap {
   max-width: 600px;
-  min-height: 812px;
+  min-height: 750px;
   position: relative;
   margin: 0 auto;
   background: #fff;
