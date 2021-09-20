@@ -422,6 +422,7 @@ h1 a img {
   vertical-align: middle;
   cursor: pointer;
   border-radius: 50%;
+  border: 2px dashed;
 }
 .stepBox-wrap > div:nth-child(1) {
   min-height: 667px;
