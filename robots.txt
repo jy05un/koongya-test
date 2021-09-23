@@ -1,4 +1,2 @@
-User-Agent:*
-Allow: /
-
-Sitemap: https://koongya-test.netlify.app/
+User-agent: *
+Allow:/
